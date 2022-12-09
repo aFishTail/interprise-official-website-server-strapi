@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true,
+      "maxLength": 32,
+      "minLength": 1,
+      "default": "产品名称"
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 250
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}
